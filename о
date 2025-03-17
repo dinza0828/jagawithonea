@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5dc; /* Soft beige */
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d2691e; /* Soft brown */
+        }
+        .play-button {
+            margin: 20px 0;
+        }
+        .schedule {
+            text-align: left;
+            margin: 20px 0;
+        }
+        .schedule p {
+            margin: 10px 0;
+        }
+        .buttons {
+            margin: 20px 0;
+        }
+        .buttons button {
+            background-color: #d2691e; /* Soft brown */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .buttons button:hover {
+            background-color: #a0522d; /* Darker brown */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My dear, I have a special invitation just for you on Tuesday, March 18, 2025...</h1>
+        <div class="play-button">
+            <button onclick="playAudio()">PLAY</button>
+        </div>
+        <div class="schedule">
+            <p><strong>2:30 PM</strong> → Meet</p>
+            <p><strong>3:00 PM</strong> → Visit Astro Park</p>
+            <p><strong>Afterwards</strong> → Dinner at Vinyl Mushroom Cafe</p>
+            <p><strong>Evening</strong> → Movie at my place 🎬 + Playing psychological games & drawing 🎨</p>
+            <p><strong>Movie Options:</strong> <em>Sweet November</em> or another movie of your choice</p>
+        </div>
+        <div class="buttons">
+            <button onclick="acceptInvitation()">I can't wait! 😍</button>
+            <button onclick="suggestAnotherDate()">Let's choose another day! ✨</button>
+        </div>
+    </div>
+
+    <!-- Audio Player -->
+    <audio id="wonderwall" src="wonderwall.mp3"></audio>
+
+    <script>
+        function playAudio() {
+            var audio = document.getElementById('wonderwall');
+            audio.play();
+        }
+
+        function acceptInvitation() {
+            alert('Welcome to our date! 😊');
+        }
+
+        function suggestAnotherDate() {
+            alert('Let's arrange another day! ✨');
+        }
+    </script>
+</body>
+</html>
